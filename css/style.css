@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.product {
+  overflow: hidden;
+  margin: 1rem;
+}
+
+img {
+  display: block;
+  width: 340px;
+  border-radius: 15px 15px 0 0;
+  margin: 0 auto;
+}
+
+.txt {
+  background-color: white;
+  width: 340px;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.product_cat {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  margin: 10px 0;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+}
+
+.product_title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 0.5em;
+}
+
+.detail {
+  margin: 15px 0;
+  line-height: 1.7rem;
+  font-size: 1.12rem;
+  color: hsl(228, 12%, 48%);
+  width: 98%;
+}
+
+.price {
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.product_price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin-right: 20px;
+  color: hsl(158, 36%, 37%);
+}
+
+.product_og_price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  align-self: center;
+}
+
+.button {
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  word-spacing: 0.2rem;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border: none;
+  margin: 0 auto;
+}
+
+.button a {
+  display: block;
+  padding-left: 6px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  opacity: 1;
+}
+
+.text {
+  text-decoration: none;
+  color: white;
+  align-self: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .product {
+    display: flex;
+  }
+
+  .img-mobile img {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+    width: 300px;
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+  }
+
+  .txt {
+    width: 350px;
+    border-radius: 0 15px 15px 0;
+    padding: 0 45px 0 35px;
+  }
+
+  .product_cat {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .product_title {
+    font-size: 40px;
+  }
+
+  .detail {
+    margin: 25px 0;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .img-desktop {
+    display: none;
+  }
+}
